@@ -1,2 +1,16 @@
-<h1>Restaurants#search</h1>
-<p>Find me in app/views/restaurants/search.html.erb</p>
+<h2>検索結果</h2>
+<%= r = @restaurant %>
+<br />
+<br />
+<br />
+<%= r['name'] %>
+<br />
+<%= r['category'] %>
+<br />
+<%= r['address'] %>
+<br />
+<%= r['tel'] %>
+<br />
+<%= image_tag(r['image']) %>
+<br />
+<%= link_to "携帯サイト", r['mobile'] %>
