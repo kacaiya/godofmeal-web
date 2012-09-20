@@ -1,16 +1,16 @@
 <h2>検索結果</h2>
 <%= r = @restaurant %>
 <br />
+<%= r[:name] %>
 <br />
+<%= r[:category] %>
 <br />
-<%= r['name'] %>
+<%= r[:address] %>
 <br />
-<%= r['category'] %>
+<%= r[:tel] %>
 <br />
-<%= r['address'] %>
+<%= image_tag(r[:image]) %>
 <br />
-<%= r['tel'] %>
+<%= link_to "携帯サイト", r[:mobile] %>
 <br />
-<%= image_tag(r['image']) %>
-<br />
-<%= link_to "携帯サイト", r['mobile'] %>
+<%= link_to 'もう一度',restaurant_path %>
